@@ -17,7 +17,7 @@ const CityPage: React.FC = () => {
 
   // Apply SEO metadata
   useSEO(city ? getCitySEO(city.name, city.slug) : {
-    title: 'Stad niet gevonden | HondAanZee.be',
+    title: 'Stad niet gevonden | KidsAanZee.be',
     description: 'Deze stad werd niet gevonden in onze database'
   });
 

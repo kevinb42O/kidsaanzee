@@ -36,7 +36,7 @@ const StatusCheck: React.FC<StatusCheckProps> = ({ city }) => {
     }
 
     const config = {
-      JA: { color: 'text-emerald-600 bg-emerald-50 border-emerald-200', icon: <CheckCircle2 className="w-10 h-10 md:w-12 md:h-12" /> },
+      JA: { color: 'text-orange-600 bg-orange-50 border-orange-200', icon: <CheckCircle2 className="w-10 h-10 md:w-12 md:h-12" /> },
       DEELS: { color: 'text-orange-600 bg-orange-50 border-orange-200', icon: <AlertCircle className="w-10 h-10 md:w-12 md:h-12" /> },
       NEE: { color: 'text-rose-600 bg-rose-50 border-rose-200', icon: <XCircle className="w-10 h-10 md:w-12 md:h-12" /> }
     };

@@ -1,6 +1,6 @@
 
 import React, { useState, useEffect } from 'react';
-import { Caravan, Mail } from 'lucide-react';
+import { Baby, Mail } from 'lucide-react';
 
 const Header: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -28,12 +28,12 @@ const Header: React.FC = () => {
         
         {/* Logo Section */}
         <a href="/" className="flex items-center gap-2 sm:gap-2.5 group transition-transform active:scale-95 touch-target">
-          <div className="bg-emerald-600 p-1.5 rounded-lg text-white group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-emerald-200">
-            <Caravan size={20} className="sm:w-[22px] sm:h-[22px] md:w-6 md:h-6" />
+          <div className="bg-orange-600 p-1.5 rounded-lg text-white group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-orange-200">
+            <Baby size={20} className="sm:w-[22px] sm:h-[22px] md:w-6 md:h-6" />
           </div>
           <div className="flex flex-col">
             <span className="text-lg sm:text-xl md:text-2xl font-black tracking-tighter leading-none">
-              <span className="text-slate-900">Camper</span><span className="text-emerald-600">Aan</span><span className="text-slate-900">Zee</span>
+              <span className="text-slate-900">Kids</span><span className="text-orange-600">Aan</span><span className="text-slate-900">Zee</span>
             </span>
             <span className="text-[9px] sm:text-[10px] font-bold text-slate-400 uppercase tracking-widest leading-none mt-0.5 sm:mt-1 hidden sm:block">
               Binnenkort beschikbaar
@@ -43,8 +43,8 @@ const Header: React.FC = () => {
         
         {/* Contact */}
         <a
-          href="mailto:info@camperaanzee.be"
-          className="btn-lift flex items-center gap-2 bg-gradient-to-r from-emerald-600 to-emerald-700 text-white px-4 sm:px-6 py-2.5 sm:py-3 rounded-full font-black text-xs sm:text-sm hover:from-emerald-700 hover:to-emerald-800 shadow-lg shadow-emerald-600/30 hover:shadow-emerald-600/50 group"
+          href="mailto:info@kidsaanzee.be"
+          className="btn-lift flex items-center gap-2 bg-gradient-to-r from-orange-600 to-orange-700 text-white px-4 sm:px-6 py-2.5 sm:py-3 rounded-full font-black text-xs sm:text-sm hover:from-orange-700 hover:to-orange-800 shadow-lg shadow-orange-600/30 hover:shadow-orange-600/50 group"
         >
           <Mail size={16} className="group-hover:rotate-12 transition-transform" />
           <span className="hidden sm:inline">Contact</span>

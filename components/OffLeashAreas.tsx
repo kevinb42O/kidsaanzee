@@ -164,7 +164,7 @@ const OffLeashAreas: React.FC<OffLeashAreasProps> = ({ city }) => {
             <div class="p-2 font-sans min-w-[180px] max-w-[240px]">
               <div class="flex items-center justify-between mb-2">
                  <b class="text-slate-900 text-sm leading-tight">${area.name}</b>
-                 <span class="px-2 py-0.5 rounded text-[9px] font-black uppercase ${isOpen ? 'bg-emerald-100 text-emerald-700' : 'bg-rose-100 text-rose-700'}">
+                 <span class="px-2 py-0.5 rounded text-[9px] font-black uppercase ${isOpen ? 'bg-orange-100 text-orange-700' : 'bg-rose-100 text-rose-700'}">
                     ${isOpen ? 'Open' : 'Gesloten'}
                  </span>
               </div>
@@ -200,7 +200,7 @@ const OffLeashAreas: React.FC<OffLeashAreasProps> = ({ city }) => {
               <span class="text-[10px] uppercase font-black text-sky-600 block mb-1">Dichtstbijzijnde</span>
               <div class="flex items-center justify-between mb-2">
                  <b class="text-slate-900 text-sm leading-tight">${nearestInfo.area.name}</b>
-                 <span class="px-2 py-0.5 rounded text-[9px] font-black uppercase ${isOpen ? 'bg-emerald-100 text-emerald-700' : 'bg-rose-100 text-rose-700'}">
+                 <span class="px-2 py-0.5 rounded text-[9px] font-black uppercase ${isOpen ? 'bg-orange-100 text-orange-700' : 'bg-rose-100 text-rose-700'}">
                     ${isOpen ? 'Open' : 'Gesloten'}
                  </span>
               </div>
@@ -249,16 +249,16 @@ const OffLeashAreas: React.FC<OffLeashAreasProps> = ({ city }) => {
                       onClick={() => {
                         navigate(`/losloopzones?area=${globalIndex}`);
                       }}
-                      className={`bg-white p-5 md:p-6 rounded-2xl border transition-all hover:shadow-md group flex items-start gap-4 cursor-pointer w-full text-left ${isOpen ? 'border-slate-200 hover:border-emerald-300' : 'border-slate-100 opacity-80'}`}
+                      className={`bg-white p-5 md:p-6 rounded-2xl border transition-all hover:shadow-md group flex items-start gap-4 cursor-pointer w-full text-left ${isOpen ? 'border-slate-200 hover:border-orange-300' : 'border-slate-100 opacity-80'}`}
                     >
-                      <div className={`h-10 w-10 md:h-12 md:w-12 rounded-xl flex items-center justify-center shrink-0 shadow-inner ${isOpen ? 'bg-emerald-50 text-emerald-600' : 'bg-rose-50 text-rose-400'}`}>
+                      <div className={`h-10 w-10 md:h-12 md:w-12 rounded-xl flex items-center justify-center shrink-0 shadow-inner ${isOpen ? 'bg-orange-50 text-orange-600' : 'bg-rose-50 text-rose-400'}`}>
                         <MapPin size={24} />
                       </div>
                       <div className="flex-grow">
                         <div className="flex items-center gap-2 mb-1">
                           <h3 className="text-lg font-black text-slate-900 leading-tight">{area.name}</h3>
                           {isOpen ? (
-                            <span className="bg-emerald-100 text-emerald-700 text-[10px] font-black px-2 py-0.5 rounded-full uppercase tracking-wider">Open</span>
+                            <span className="bg-orange-100 text-orange-700 text-[10px] font-black px-2 py-0.5 rounded-full uppercase tracking-wider">Open</span>
                           ) : (
                             <span className="bg-rose-100 text-rose-700 text-[10px] font-black px-2 py-0.5 rounded-full uppercase tracking-wider">Gesloten</span>
                           )}
@@ -333,8 +333,8 @@ const OffLeashAreas: React.FC<OffLeashAreasProps> = ({ city }) => {
           </div>
 
           <div className="aspect-[4/3] lg:aspect-auto min-h-[280px] sm:min-h-[350px] md:min-h-[400px] relative group">
-             <div className="absolute inset-0 bg-gradient-to-br from-sky-100 to-emerald-50 rounded-[1.5rem] sm:rounded-[2rem]" />
-             <div className="absolute -inset-1 bg-gradient-to-br from-sky-400/20 via-emerald-400/20 to-cyan-400/20 rounded-[1.75rem] sm:rounded-[2.25rem] blur-sm opacity-60 md:group-hover:opacity-100 transition-opacity duration-500" />
+             <div className="absolute inset-0 bg-gradient-to-br from-sky-100 to-orange-50 rounded-[1.5rem] sm:rounded-[2rem]" />
+             <div className="absolute -inset-1 bg-gradient-to-br from-sky-400/20 via-orange-400/20 to-cyan-400/20 rounded-[1.75rem] sm:rounded-[2.25rem] blur-sm opacity-60 md:group-hover:opacity-100 transition-opacity duration-500" />
              <div ref={mapRef} className="absolute inset-0 border-2 sm:border-4 border-white/80 shadow-xl sm:shadow-2xl shadow-sky-500/10 ring-1 ring-slate-200/50 rounded-[1.5rem] sm:rounded-[2rem]" style={{ touchAction: 'pan-x pan-y' }} />
              <div className="absolute bottom-3 sm:bottom-4 left-3 sm:left-4 z-[20] lg:hidden">
                <div className="bg-white/95 backdrop-blur-md px-3 sm:px-4 py-1.5 sm:py-2 rounded-full text-[9px] sm:text-[10px] font-black uppercase text-slate-600 shadow-lg border border-white/50 flex items-center gap-1.5 sm:gap-2">
@@ -345,9 +345,9 @@ const OffLeashAreas: React.FC<OffLeashAreasProps> = ({ city }) => {
                </div>
              </div>
              <div className="absolute top-3 sm:top-4 right-3 sm:right-4 z-[20] flex flex-col gap-1.5 sm:gap-2">
-                <div className="flex items-center gap-1.5 sm:gap-2 bg-white/95 backdrop-blur-md px-2 sm:px-3 py-1 sm:py-1.5 rounded-lg sm:rounded-xl border border-emerald-100 shadow-lg shadow-emerald-500/10">
-                  <div className="w-2 h-2 sm:w-2.5 sm:h-2.5 rounded-full bg-gradient-to-br from-emerald-400 to-emerald-600 ring-2 ring-emerald-400/30"></div>
-                  <span className="text-[9px] sm:text-[10px] font-black uppercase text-emerald-700">Nu open</span>
+                <div className="flex items-center gap-1.5 sm:gap-2 bg-white/95 backdrop-blur-md px-2 sm:px-3 py-1 sm:py-1.5 rounded-lg sm:rounded-xl border border-orange-100 shadow-lg shadow-orange-500/10">
+                  <div className="w-2 h-2 sm:w-2.5 sm:h-2.5 rounded-full bg-gradient-to-br from-orange-400 to-orange-600 ring-2 ring-orange-400/30"></div>
+                  <span className="text-[9px] sm:text-[10px] font-black uppercase text-orange-700">Nu open</span>
                 </div>
                 <div className="flex items-center gap-1.5 sm:gap-2 bg-white/95 backdrop-blur-md px-2 sm:px-3 py-1 sm:py-1.5 rounded-lg sm:rounded-xl border border-rose-100 shadow-lg shadow-rose-500/10">
                   <div className="w-2 h-2 sm:w-2.5 sm:h-2.5 rounded-full bg-gradient-to-br from-rose-400 to-rose-600"></div>

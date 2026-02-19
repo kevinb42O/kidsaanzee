@@ -34,7 +34,7 @@ const Services: React.FC<ServicesProps> = ({ city }) => {
           {cityServices.length > 3 && (
             <Link 
               to="/diensten"
-              className="flex items-center gap-2 text-emerald-600 font-bold hover:gap-3 transition-all text-sm md:text-base active:opacity-70 touch-target"
+              className="flex items-center gap-2 text-orange-600 font-bold hover:gap-3 transition-all text-sm md:text-base active:opacity-70 touch-target"
             >
               Bekijk alle diensten <ChevronRight size={18} />
             </Link>
@@ -44,7 +44,7 @@ const Services: React.FC<ServicesProps> = ({ city }) => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
           {displayServices.map((service) => (
             <div key={service.id} className="group cursor-pointer active:scale-[0.98] transition-transform">
-              <div className="relative aspect-[16/9] rounded-[1.25rem] sm:rounded-[1.5rem] overflow-hidden mb-4 sm:mb-5 shadow-lg shadow-slate-100 md:transition-shadow md:group-hover:shadow-emerald-100">
+              <div className="relative aspect-[16/9] rounded-[1.25rem] sm:rounded-[1.5rem] overflow-hidden mb-4 sm:mb-5 shadow-lg shadow-slate-100 md:transition-shadow md:group-hover:shadow-orange-100">
                 <img 
                   src={service.image} 
                   alt={service.name} 
@@ -53,17 +53,17 @@ const Services: React.FC<ServicesProps> = ({ city }) => {
                   decoding="async"
                 />
                 <div className="absolute top-3 sm:top-4 left-3 sm:left-4 bg-white/95 backdrop-blur px-2.5 sm:px-3 py-1 sm:py-1.5 rounded-full flex items-center gap-1.5 sm:gap-2 text-[9px] sm:text-[10px] font-black uppercase tracking-wider text-slate-800 shadow-sm border border-white/20">
-                  <span className="text-emerald-600">{getIcon(service.type)}</span> {service.type}
+                  <span className="text-orange-600">{getIcon(service.type)}</span> {service.type}
                 </div>
               </div>
-              <h3 className="text-lg sm:text-xl font-bold text-slate-900 mb-1.5 sm:mb-2 md:group-hover:text-emerald-600 md:transition-colors">{service.name}</h3>
+              <h3 className="text-lg sm:text-xl font-bold text-slate-900 mb-1.5 sm:mb-2 md:group-hover:text-orange-600 md:transition-colors">{service.name}</h3>
               <p className="text-slate-500 text-xs sm:text-sm mb-3 sm:mb-4 line-clamp-2 leading-relaxed font-medium">{service.description}</p>
               {service.address && (
                 <p className="text-slate-400 text-[10px] sm:text-xs mb-2 font-medium">{service.address}</p>
               )}
               <div className="flex flex-wrap gap-1.5 sm:gap-2 mb-3">
                 {service.tags.map((tag) => (
-                  <span key={tag} className="text-[8px] sm:text-[9px] md:text-[10px] uppercase tracking-widest font-black bg-emerald-50 text-emerald-700 px-2 sm:px-2.5 py-1 sm:py-1.5 rounded-lg border border-emerald-100">
+                  <span key={tag} className="text-[8px] sm:text-[9px] md:text-[10px] uppercase tracking-widest font-black bg-orange-50 text-orange-700 px-2 sm:px-2.5 py-1 sm:py-1.5 rounded-lg border border-orange-100">
                     {tag}
                   </span>
                 ))}
@@ -73,7 +73,7 @@ const Services: React.FC<ServicesProps> = ({ city }) => {
                   href={service.website}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-block text-[10px] sm:text-xs text-emerald-600 hover:text-emerald-700 font-bold hover:underline"
+                  className="inline-block text-[10px] sm:text-xs text-orange-600 hover:text-orange-700 font-bold hover:underline"
                   onClick={(e) => e.stopPropagation()}
                 >
                   Bezoek website →

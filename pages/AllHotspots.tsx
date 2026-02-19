@@ -77,10 +77,10 @@ const AllHotspots: React.FC = () => {
               ☕
             </div>
             <h1 className="text-3xl sm:text-4xl md:text-6xl font-black mb-4 sm:mb-6 leading-[1.1] tracking-tight">
-              Alle Hondvriendelijke <span className="text-sky-400">Hotspots</span>
+              Alle Kindvriendelijke <span className="text-sky-400">Hotspots</span>
             </h1>
             <p className="text-slate-300 text-base sm:text-lg md:text-xl leading-relaxed font-medium">
-              Ontdek alle hondvriendelijke plekjes aan de Belgische kust. Filter op stad of type om jouw perfecte spot te vinden.
+              Ontdek alle kindvriendelijke plekjes aan de Belgische kust. Filter op stad of type om jouw perfecte spot te vinden.
             </p>
           </div>
         </div>

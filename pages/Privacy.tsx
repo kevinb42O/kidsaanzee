@@ -42,7 +42,7 @@ const Privacy: React.FC = () => {
           <section className="mb-10">
             <h2 className="text-2xl sm:text-3xl font-bold text-slate-900 mb-4">1. Wie zijn wij?</h2>
             <p className="text-slate-600 leading-relaxed mb-4">
-              HondAanZee.be is een informatieve website die hondeneigenaars helpt bij het vinden van hondvriendelijke locaties aan de Belgische kust. 
+              KidsAanZee.be is een informatieve website die ouders en gezinnen helpt bij het vinden van kindvriendelijke locaties aan de Belgische kust. 
               Wij respecteren je privacy en gaan zorgvuldig om met je persoonsgegevens.
             </p>
           </section>
@@ -50,7 +50,7 @@ const Privacy: React.FC = () => {
           <section className="mb-10">
             <h2 className="text-2xl sm:text-3xl font-bold text-slate-900 mb-4">2. Welke gegevens verzamelen wij?</h2>
             <p className="text-slate-600 leading-relaxed mb-4">
-              HondAanZee.be verzamelt <strong>minimale persoonsgegevens</strong>:
+              KidsAanZee.be verzamelt <strong>minimale persoonsgegevens</strong>:
             </p>
             <ul className="list-disc pl-6 text-slate-600 space-y-2 mb-4">
               <li><strong>Via WhatsApp contact:</strong> Wanneer je ons contacteert via WhatsApp voor zakelijke aanmelding, delen je vrijwillig je telefoonnummer en berichtgegevens. Deze communicatie vindt plaats via WhatsApp en wordt beheerd volgens het privacybeleid van WhatsApp/Meta.</li>

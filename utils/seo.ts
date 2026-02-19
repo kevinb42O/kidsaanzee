@@ -14,7 +14,7 @@ export const useSEO = ({
   title,
   description,
   keywords,
-  ogImage = 'https://hondaanzee.be/og-image.jpg',
+  ogImage = 'https://kidsaanzee.be/og-image.jpg',
   canonical,
   structuredData
 }: SEOProps) => {
@@ -45,7 +45,7 @@ export const useSEO = ({
     updateMeta('og:title', title, true);
     updateMeta('og:description', description, true);
     updateMeta('og:image', ogImage, true);
-    updateMeta('og:url', canonical || `https://hondaanzee.be${location.pathname}`, true);
+    updateMeta('og:url', canonical || `https://kidsaanzee.be${location.pathname}`, true);
 
     // Twitter Card
     updateMeta('twitter:title', title);
@@ -59,7 +59,7 @@ export const useSEO = ({
       linkCanonical.setAttribute('rel', 'canonical');
       document.head.appendChild(linkCanonical);
     }
-    linkCanonical.setAttribute('href', canonical || `https://hondaanzee.be${location.pathname}`);
+    linkCanonical.setAttribute('href', canonical || `https://kidsaanzee.be${location.pathname}`);
 
     // Structured Data
     if (structuredData) {
@@ -83,44 +83,44 @@ export const useSEO = ({
 // SEO Metadata for each page type
 export const SEO_DATA = {
   home: {
-    title: 'Honden aan Zee België 2026 | Strandregels, Losloopzones & Hondvriendelijke Plekken aan de Belgische Kust',
-    description: '✓ Actuele strandregels voor honden ✓ Losloopzones en hondenweides ✓ Hondvriendelijke cafés, restaurants & hotels ✓ Alle badsteden van De Panne tot Knokke ✓ Gratis & up-to-date info 2026',
-    keywords: 'hond strand belgië, hond aan zee, hondenstrand belgië, losloopzone hond kust, hondvriendelijk strand, strand met hond belgie, wandelen hond zee, hondvriendelijk restaurant kust, strandregels honden 2026'
+    title: 'KidsAanZee.be | Binnenkort — Dé Kustgids voor Gezinnen aan de Belgische Kust',
+    description: 'Binnenkort online: dé complete gids voor gezinnen aan de Belgische kust. Speeltuinen, kindvriendelijke restaurants, topactiviteiten en praktische info van De Panne tot Knokke.',
+    keywords: 'kids aan zee, kinderen belgische kust, speeltuin aan zee, kindvriendelijk restaurant kust, gezinsvakantie zee, activiteiten kinderen strand, gezin belgische kust'
   },
   
   hotspots: {
-    title: 'Hondvriendelijke Hotspots Belgische Kust | Cafés, Restaurants & Hotels waar Honden Welkom Zijn',
-    description: 'Ontdek de beste hondvriendelijke cafés, restaurants en hotels aan de Belgische kust. Van Oostende tot Knokke - waar je hond écht welkom is. Filter op stad en type.',
-    keywords: 'hondvriendelijk restaurant belgië kust, hondvriendelijk café aan zee, hotel honden toegelaten kust, hondvriendelijk terras zee, hond welkom restaurant, hond toegestaan café, hondvriendelijke horeca kust'
+    title: 'Kids Hotspots Belgische Kust | Speeltuinen, Attracties & Kindvriendelijke Plekken',
+    description: 'Ontdek de leukste speeltuinen, attracties en kindvriendelijke plekken aan de Belgische kust. Van De Panne tot Knokke - waar kinderen écht welkom zijn.',
+    keywords: 'speeltuin belgische kust, kindvriendelijke plekken aan zee, attracties kinderen kust, kids hotspots strand'
   },
   
   diensten: {
-    title: 'Dierenartsen & Dierenwinkels Belgische Kust | Praktische Diensten voor Hondenbezitters',
-    description: 'Vind de beste dierenartsen en dierenwinkels aan de Belgische kust. Van Oostende tot Knokke - alle praktische diensten voor je hond op één plek. Filter op stad en type.',
-    keywords: 'dierenarts aan zee belgië, dierenwinkel kust belgië, dierenspeciaalzaak strand, dierenarts oostende, petshop aan zee, hondentrimsalon kust, dierenarts knokke, dierenwinkel blankenberge'
+    title: 'Kindvriendelijke Horeca Belgische Kust | Restaurants & Strandbars voor Gezinnen',
+    description: 'Vind de beste kindvriendelijke restaurants en strandbars aan de Belgische kust. Met speelhoek, kinderstoel en lekker kindermenu.',
+    keywords: 'kindvriendelijk restaurant kust, gezinsrestaurant aan zee, kindermenu strand, speelhoek restaurant kust'
   },
 
   losloopzones: {
-    title: 'Losloopzones Belgische Kust | Overzicht Hondenweides & Losloopgebieden aan Zee',
-    description: 'Interactieve kaart met alle losloopzones en hondenweides aan de Belgische kust. Van De Panne tot Knokke - vind de perfecte plek waar je hond vrij kan loslopen. Met ratings, foto\'s en routebeschrijvingen.',
-    keywords: 'losloopzone hond kust belgië, hondenweide aan zee, hondenlosloopgebied strand, vrij loslopen hond zee, omheinde hondenweide kust, losloopzone oostende, hondenweide knokke, losloopgebied de haan'
+    title: 'Activiteiten Belgische Kust | De Beste Uitjes voor Kinderen aan Zee',
+    description: 'De leukste activiteiten voor kinderen aan de Belgische kust. Van musea tot gocarts, voor regenachtige en zonnige dagen.',
+    keywords: 'activiteiten kinderen kust, uitjes gezin belgische kust, musea kinderen aan zee, gocart strand'
   },
   
   privacy: {
-    title: 'Privacybeleid | HondAanZee.be',
-    description: 'Privacybeleid van HondAanZee.be - Hoe wij omgaan met je gegevens volgens AVG/GDPR',
+    title: 'Privacybeleid | KidsAanZee.be',
+    description: 'Privacybeleid van KidsAanZee.be - Hoe wij omgaan met je gegevens volgens AVG/GDPR',
     keywords: ''
   },
   
   terms: {
-    title: 'Algemene Voorwaarden | HondAanZee.be',
-    description: 'Algemene voorwaarden voor het gebruik van HondAanZee.be',
+    title: 'Algemene Voorwaarden | KidsAanZee.be',
+    description: 'Algemene voorwaarden voor het gebruik van KidsAanZee.be',
     keywords: ''
   },
   
   cookies: {
-    title: 'Cookiebeleid | HondAanZee.be',
-    description: 'Cookiebeleid van HondAanZee.be - Welke cookies we gebruiken en waarom',
+    title: 'Cookiebeleid | KidsAanZee.be',
+    description: 'Cookiebeleid van KidsAanZee.be - Welke cookies we gebruiken en waarom',
     keywords: ''
   }
 };
@@ -128,38 +128,36 @@ export const SEO_DATA = {
 // Generate city-specific SEO data
 export const getCitySEO = (cityName: string, citySlug: string) => {
   const searchTerms = [
-    `hond strand ${cityName.toLowerCase()}`,
-    `hondenstrand ${cityName.toLowerCase()}`,
-    `losloopzone ${cityName.toLowerCase()}`,
-    `strandregels hond ${cityName.toLowerCase()}`,
-    `hond toegestaan strand ${cityName.toLowerCase()}`,
-    `wandelen hond ${cityName.toLowerCase()}`,
-    `hondenweide ${cityName.toLowerCase()}`,
-    `hondvriendelijk ${cityName.toLowerCase()}`
+    `kinderen strand ${cityName.toLowerCase()}`,
+    `speeltuin ${cityName.toLowerCase()}`,
+    `kindvriendelijk ${cityName.toLowerCase()}`,
+    `activiteiten kinderen ${cityName.toLowerCase()}`,
+    `gezinsvakantie ${cityName.toLowerCase()}`,
+    `restaurant kinderen ${cityName.toLowerCase()}`
   ];
 
   return {
-    title: `Hond Strand ${cityName} 2026 | Strandregels, Losloopzones & Hondvriendelijke Plekken ${cityName}`,
-    description: `✓ Actuele strandregels voor honden in ${cityName} ✓ Losloopzones en hondenweides ✓ Waar mag je hond vrij lopen? ✓ Seizoensregels winter & zomer ✓ Hondvriendelijke cafés en restaurants in ${cityName}`,
+    title: `Kids ${cityName} 2026 | Speeltuinen, Horeca & Activiteiten voor Gezinnen in ${cityName}`,
+    description: `✓ De leukste speeltuinen in ${cityName} ✓ Kindvriendelijke restaurants ✓ Topactiviteiten voor kinderen ✓ Praktische info voor gezinnen in ${cityName}`,
     keywords: searchTerms.join(', '),
-    canonical: `https://hondaanzee.be/#/${citySlug}`,
+    canonical: `https://kidsaanzee.be/#/${citySlug}`,
     structuredData: {
       "@context": "https://schema.org",
       "@type": "TouristDestination",
-      "name": `${cityName} - Hondvriendelijk Strand`,
-      "description": `Informatie over strandregels en faciliteiten voor honden in ${cityName} aan de Belgische kust`,
-      "url": `https://hondaanzee.be/#/${citySlug}`,
+      "name": `${cityName} - Kindvriendelijk aan Zee`,
+      "description": `Informatie over speeltuinen, horeca en activiteiten voor kinderen in ${cityName} aan de Belgische kust`,
+      "url": `https://kidsaanzee.be/#/${citySlug}`,
       "isAccessibleForFree": true,
       "publicAccess": true,
       "geo": {
         "@type": "GeoCoordinates",
         "addressCountry": "BE"
       },
-      "touristType": ["Pet Owner", "Dog Owner"],
+      "touristType": ["Family", "Parents", "Children"],
       "amenityFeature": [
         {
           "@type": "LocationFeatureSpecification",
-          "name": "Hondvriendelijk strand",
+          "name": "Kindvriendelijk strand",
           "value": true
         }
       ]

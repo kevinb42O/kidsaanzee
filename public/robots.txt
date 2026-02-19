@@ -1,11 +1,11 @@
-# CamperAanZee.be - Robots.txt
+# KidsAanZee.be - Robots.txt
 # Updated: 2026-02-19
 
 User-agent: *
 Allow: /
 
 # Sitemap location
-Sitemap: https://camperaanzee.be/sitemap.xml
+Sitemap: https://kidsaanzee.be/sitemap.xml
 
 # Crawl-delay (be nice to smaller bots)
 Crawl-delay: 1

@@ -81,7 +81,7 @@ const Hotspots: React.FC<HotspotsProps> = ({ city }) => {
           </div>
         ) : (
           <a 
-            href={`https://wa.me/32494816714?text=${encodeURIComponent(`Dag! 👋\n\nIk ben een hondvriendelijke ondernemer in ${city.name} en ik zou graag mijn zaak op hondaanzee.be laten tonen bij de hotspots.\n\nKun je me meer info geven over de mogelijkheden?\n\nBedankt!`)}`}
+            href={`https://wa.me/32494816714?text=${encodeURIComponent(`Dag! 👋\n\nIk ben een kindvriendelijke ondernemer in ${city.name} en ik zou graag mijn zaak op kidsaanzee.be laten tonen bij de hotspots.\n\nKun je me meer info geven over de mogelijkheden?\n\nBedankt!`)}`}
             target="_blank"
             rel="noopener noreferrer"
             className="block bg-slate-50 border-2 border-dashed border-slate-200 rounded-3xl p-8 sm:p-12 md:p-16 text-center hover:border-sky-300 hover:bg-sky-50/30 transition-all cursor-pointer group"
@@ -89,7 +89,7 @@ const Hotspots: React.FC<HotspotsProps> = ({ city }) => {
             <div className="max-w-lg mx-auto">
               <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-slate-900 mb-3 sm:mb-4 group-hover:text-sky-600 transition-colors">Wil je jouw zaak hier tonen?</h3>
               <p className="text-slate-600 font-medium leading-relaxed text-sm sm:text-base mb-6">
-                Ben jij een hondvriendelijke ondernemer in {city.name}? Laat je zaak hier zien en bereik duizenden hondeneigenaars die op zoek zijn naar de beste plekjes aan de kust.
+                Ben jij een kindvriendelijke ondernemer in {city.name}? Laat je zaak hier zien en bereik duizenden gezinnen die op zoek zijn naar de beste plekjes aan de kust.
               </p>
               <div className="inline-flex items-center gap-2 text-sky-600 font-bold text-sm sm:text-base group-hover:gap-3 transition-all">
                 <Coffee size={20} />

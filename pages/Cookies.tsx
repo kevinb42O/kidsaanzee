@@ -48,12 +48,12 @@ const Cookies: React.FC = () => {
           </section>
 
           <section className="mb-10">
-            <h2 className="text-2xl sm:text-3xl font-bold text-slate-900 mb-4">2. Welke cookies gebruikt HondAanZee.be?</h2>
+            <h2 className="text-2xl sm:text-3xl font-bold text-slate-900 mb-4">2. Welke cookies gebruikt KidsAanZee.be?</h2>
             
             <div className="bg-sky-50 border-2 border-sky-200 rounded-2xl p-6 mb-6">
               <p className="text-sky-900 font-bold text-lg mb-3">✨ Goed nieuws!</p>
               <p className="text-sky-800 leading-relaxed mb-3">
-                HondAanZee.be gebruikt momenteel <strong>GEEN cookies of tracking tools</strong>.
+                KidsAanZee.be gebruikt momenteel <strong>GEEN cookies of tracking tools</strong>.
               </p>
               <p className="text-sky-800 leading-relaxed">
                 We plaatsen geen marketing cookies, analytics cookies of tracking pixels van derden. 
@@ -144,7 +144,7 @@ const Cookies: React.FC = () => {
               Heb je vragen over ons cookiebeleid of privacy? Neem contact met ons op:
             </p>
             <div className="bg-sky-50 border-2 border-sky-200 rounded-2xl p-6">
-              <p className="text-slate-900 font-bold mb-2">HondAanZee.be</p>
+              <p className="text-slate-900 font-bold mb-2">KidsAanZee.be</p>
               <p className="text-slate-600">WhatsApp: <a href="https://wa.me/32494816714" className="text-sky-600 font-bold hover:underline">+32 494 81 67 14</a></p>
               <p className="text-slate-600 text-sm mt-3">
                 Meer over je rechten? Bekijk ons <Link to="/privacy" className="text-sky-600 font-bold hover:underline">Privacybeleid</Link>

@@ -1,11 +1,11 @@
 {
-  "name": "CamperAanZee.be",
-  "short_name": "CamperAanZee",
-  "description": "Binnenkort - Jouw complete gids voor camperaars aan de Belgische kust",
+  "name": "KidsAanZee.be",
+  "short_name": "KidsAanZee",
+  "description": "Binnenkort - Jouw complete gids voor gezinnen aan de Belgische kust",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#ffffff",
-  "theme_color": "#059669",
+  "theme_color": "#ea580c",
   "orientation": "portrait-primary",
   "icons": [
     {
@@ -21,6 +21,6 @@
       "purpose": "any maskable"
     }
   ],
-  "categories": ["lifestyle", "travel", "pets"],
+  "categories": ["lifestyle", "travel", "family"],
   "lang": "nl-BE"
 }
